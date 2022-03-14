@@ -155,7 +155,7 @@ locations = {
         W: "Room 5"
     },
     "Room 7": {
-        title: "The Key to sucess",
+        title: "The Key to succes",
         intro: "You enter the rusty cage, which you smashed with a hammer.",
         first: 0,
         description: "There is nothing in this room left,\nit reminds you of your love life; Empty and depressing...",
@@ -558,6 +558,8 @@ def pickup():
     print((f'{cr.Fore.LIGHTBLACK_EX}_' * 60) + '\n')
     if locations[player.location][item] == []:
         delay_print('There aren\'t any items in this room to pick up!\n')
+    elif len(player.inventory) == 2:
+	    delay_print('Your inventory is full!\n')
     elif len(locations[player.location][item]) == 1:
         delay_print('You picked up a ' + locations[player.location][item][0]+'\n')
         player.inventory.append(locations[player.location][item][0])
