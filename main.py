@@ -805,7 +805,7 @@ def options():
 
 def helpmenu():
     os.system('clear')
-    print(f'{cr.Fore.LIGHTBLACK_EX}_' * 60)
+    print((f'{cr.Fore.LIGHTBLACK_EX}_' * 60) + '\n')
     print(f'{cr.Fore.LIGHTGREEN_EX}{cr.Style.BRIGHT}                       Controls:')
     time.sleep(0.3)
     print(' ')

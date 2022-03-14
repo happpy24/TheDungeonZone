@@ -38,7 +38,7 @@
 ___
 ___
 ___
-Found a bug? -> happpy24#0024 on discord
+Found a bug? -> happpy24#2424 on discord
 
 
 
